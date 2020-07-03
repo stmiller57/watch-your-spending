@@ -1,64 +1,36 @@
-# watch-your-spending
-A budget-tracking application that can function online or offline. 
+# Watch Your Spending
+This budget tracking application keeps tabs on your expenses whether online or offline. 
 
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Contributing](#contributing)
+4. [License](#license)
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+![](public/assets/BudgetTracker.gif)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Description
+When traveling, access to cellular data and WiFi can be hit or miss. Users who want to track expenses at all times need offline access to their budgeting application for those times when connecting to the Internet fail. 
 
-Offline Functionality:
+When users are online, they can log their expenses into MongoDB. Those expenses will stay with them offline, where they can add more expenses and deposits through IndexedDB.
 
-  * Enter deposits offline
+Once users re-establish a network connection, the information from IndexedDB will transfer into MongoDB. 
 
-  * Enter expenses offline
+The application can be started with this command:
 
-When brought back online:
+```sh
+npm start
+```
 
-  * Offline entries should be added to tracker.
+The user will be told what port the app is running on and can go to `localhost:` in the web browser.
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+## Installation
 
-## Business Context
+Run `npm install` to include all necessary dependencies. 
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+## Contributing
 
+Contributions and improvements to the project are welcome at any time. 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
-
-- - -
-
-## Commit Early and Often
-
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+### License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
