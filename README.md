@@ -1,5 +1,5 @@
 # Watch Your Spending
-This budget tracking application keeps tabs on your expenses whether online or offline. 
+This budget-tracking application keeps tabs on your expenses whether online or offline. 
 
 ## Table of Contents
 1. [Description](#description)
@@ -10,7 +10,7 @@ This budget tracking application keeps tabs on your expenses whether online or o
 ![](public/assets/BudgetTracker.gif)
 
 ## Description
-When traveling, access to cellular data and WiFi can be hit or miss. Users who want to track expenses at all times need offline access to their budgeting application for those times when connecting to the Internet fail. 
+When traveling, access to cellular data and WiFi can be hit or miss. Users who want to track expenses at all times need offline access to their budgeting application for those times when network access in unavailable. 
 
 When users are online, they can log their expenses into MongoDB. Those expenses will stay with them offline, where they can add more expenses and deposits through IndexedDB.
 
@@ -23,6 +23,10 @@ npm start
 ```
 
 The user will be told what port the app is running on and can go to `localhost:` in the web browser.
+
+The application is also located on Heroku:
+
+https://fathomless-reef-31659.herokuapp.com/
 
 ## Installation
 
